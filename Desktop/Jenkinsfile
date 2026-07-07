@@ -1,0 +1,10 @@
+pipeline{
+	agent any
+	stages{
+		stage("execute"){
+			steps{
+				bat 'java App.java'
+			}
+		}
+	}
+ }
